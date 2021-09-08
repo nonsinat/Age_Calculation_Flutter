@@ -3,8 +3,16 @@ import 'package:age_calculator_flutter/config/theme_provider.dart';
 import 'package:age_calculator_flutter/screen/home_screen.dart';
 import 'package:age_calculator_flutter/screen/landing_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+    WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays(
+    [
+    // SystemUiOverlay.bottom,//This line is used for showing the bottom bar
+    //  SystemUiOverlay.top, // This line is used for showing the top bar,
+    ],
+  );
   runApp(MyApp());
 }
 
