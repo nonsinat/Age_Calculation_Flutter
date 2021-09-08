@@ -1,6 +1,7 @@
 import 'package:age_calculator_flutter/config/theme_pref.dart';
 import 'package:age_calculator_flutter/config/theme_provider.dart';
 import 'package:age_calculator_flutter/screen/home_screen.dart';
+import 'package:age_calculator_flutter/screen/landing_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: LandingScreen(),
     );
   }
 }
