@@ -91,6 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
     print("Next Birthday is : $_nextduration ");
 
     print("Day birthday is : $_nextBirthdayWeekday ");
+
+    
   }
 
   @override
